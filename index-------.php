@@ -36,12 +36,10 @@
                     </select>
                 </td>
             </tr>
-            <div class="siblings">
-
-
+            <tr class="siblings">
                 <form name="Form-7.a" id="Form7a" style="display:none">
                     <!---- THIS IS FORM 1---->
-                    <?php include('Form-7.a Demand Loan-Cash.php'); ?>
+                    <?php include('Form-7aDemandLoanCash.php'); ?>
                 </form>
 
                 <form name="Form-7.a" id="Form72a" style="display:none">
@@ -51,36 +49,42 @@
 
                 <form name="Form-7.b" id="Form7b" style="display:none">
                     <!---- THIS IS FORM 2---->
-                    <?php include('Form-7.b Demand Loan-BBLC.php'); ?>
+                    <?php include('Form-7bDemandLoanBBLC.php'); ?>
                 </form>
 
                 <form name="Form-7.c" id="Form7c" style="display:none">
                     <!---- THIS IS FORM 3---->
-                    <?php include('Form-7.c FDBP.php'); ?>
+                    <?php include('Form-7cFDBP.php'); ?>
                 </form>
 
                 <form name="Form-7.d" id="Form7d" style="display:none">
                     <!---- THIS IS FORM 3---->
-                    <?php include('Form-7.d Packing Credit.php'); ?>
+                    <?php include('Form-7dPackingCredit.php'); ?>
                 </form>
 
                 <form name="Form-7.e" id="Form7e" style="display:none">
                     <!---- THIS IS FORM 3---->
-                    <?php include('Form-7.e LTR (FC).php'); ?>
+                    <?php include('Form-7eLTR(FC).php'); ?>
                 </form>
 
                 <form name="Form-7.f" id="Form7f" style="display:none">
                     <!---- THIS IS FORM 3---->
-                    <?php include('Form-7.f LDBP.php'); ?>
+                    <?php include('Form-7fLDBP.php'); ?>
                 </form>
 
-            </div>
-            <?php echo '<script>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
         $("#natureOfCredit").on("change", function() {
             $("#" + $(this).val()).show().siblings().hide();
-            console.log($("#"+$this).val());
+            // $("#" + $(this).val()).show();
+            console.log($(this).val());
+            console.log($this.siblings().val());
+
         })
-    </script>'; ?>
+    </script>
 </body>
 
 </html>
