@@ -13,15 +13,11 @@
 <body>
 
   <nav class="container">
-    <h2>Forms</h2>
+    <!-- <h2>Forms</h2>
     <ul>
       <li>
         <a target="_blank" href="./index2.php">Form Load Based on Selected Value</a>
       </li>
-      <!-- <li>
-        <a target="_blank" href="./form7a.php">Form-7.a Demand Loan-Cash
-        </a>
-      </li> -->
       <li>
         <a target="_blank" href="./Form-7a_insert.php">Form-7.a Demand Loan-Cash
         </a>
@@ -45,7 +41,7 @@
         <a target="_blank" href="./lawFormCoding.xlsx" download>Form-With Code</a>
       </li>
     </ul>
-    <br />
+    <br /> -->
     <h2>Tables</h2>
     <ul>
       <li>
