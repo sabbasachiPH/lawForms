@@ -52,7 +52,7 @@
       <li><a target="_blank" href="./Table-7.d Packing Credit.html">Table-7.d Packing Credit</a></li>
       <li><a target="_blank" href="./Table-7.e LTR (FC).html">Table-7.e LTR (FC)</a></li>
       <li><a target="_blank" href="./Table-7.f LDBP.html">Table-7.f LDBP</a></li>
-      <li><a target="_blank" href="./allTables.html">All in One</a></li>
+      <li><a target="_blank" href="./allTables.php">All in One</a></li>
     </ul>
     </ul>
   </nav>

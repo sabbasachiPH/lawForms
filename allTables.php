@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>7.a Demand Loan-Cash</title>
 
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 10px;
-      }
-      caption {
-        font-weight: bolder;
-        color: blue;
-        font-size: 20px;
-        /* border: 1px solid blue; */
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("select").change(function() {
+        $(this).find("option:selected").each(function() {
+          var optionValue = $(this).attr("value");
+          if (optionValue) {
+            $(".box").not("." + optionValue).hide();
+            $("." + optionValue).show();
+          } else {
+            $(".box").hide();
+          }
+        });
+      }).change();
+    });
+  </script>
+
+  <title>7.a Demand Loan-Cash</title>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+
+    caption {
+      font-weight: bolder;
+      color: blue;
+      font-size: 20px;
+      /* border: 1px solid blue; */
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <select>
+      <option>Choose Color</option>
+      <option value="table7a">Table-7.a Demand Loan-Cash</option>
+      <option value="table7b">Table-7.b Demand Loan-BBLC</option>
+      <option value="table7c">Table-7.c FDBP</option>
+      <option value="table7d">Table-7.d Packing Credit</option>
+      <option value="table7e">Table-7.e LTR (FC)</option>
+      <option value="table7f">Table-7.f LDBP</option>
+    </select>
+  </div>
+  <div class="box table7a">
     <table>
       <caption>
         Table-7.a Demand Loan-Cash
@@ -149,11 +181,8 @@
         </tr>
       </tbody>
     </table>
-    <br />
-    <hr />
-    <hr />
-    <br />
-
+  </div>
+  <div class="box table7b">
     <table>
       <caption>
         Table-7.b Demand Loan-BBLC
@@ -300,12 +329,8 @@
         </tr>
       </tbody>
     </table>
-
-    <br />
-    <hr />
-    <hr />
-    <br />
-
+  </div>
+  <div class="box table7c">
     <table>
       <caption>
         Table-7.c FDBP
@@ -449,12 +474,8 @@
         </tr>
       </tbody>
     </table>
-
-    <br />
-    <hr />
-    <hr />
-    <br />
-
+  </div>
+  <div class="box table7d">
     <table>
       <caption>
         Table-7.d Packing Credit
@@ -547,11 +568,9 @@
         </tr>
       </tbody>
     </table>
+  </div>
 
-    <br />
-    <hr />
-    <hr />
-    <br />
+  <div class="box table7e">
 
     <table>
       <caption>
@@ -669,12 +688,9 @@
         </tr>
       </tbody>
     </table>
+  </div>
 
-    <br />
-    <hr />
-    <hr />
-    <br />
-
+  <div class="box table7f">
     <table>
       <caption>
         Table-7.f LDBP
@@ -818,5 +834,9 @@
         </tr>
       </tbody>
     </table>
-  </body>
+
+  </div>
+
+</body>
+
 </html>
