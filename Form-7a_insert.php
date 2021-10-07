@@ -225,6 +225,7 @@
     </table>
     <input type="submit" name="submit7a" value="Submit" id="remarks" />
   </form>
+  <a target="_blank" href="./Table-7aDemandLoanCash.php">Table-7.a Demand Loan-Cash</a>
 
 </body>
 
